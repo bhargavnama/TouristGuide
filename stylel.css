@@ -1,0 +1,28 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Style for the location icon */
+.map-icon {
+    font-size: 30px;
+    color: #007BFF;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Style for the map container */
+.map-container {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
+
+iframe {
+    border: 0;
+}

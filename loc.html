@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Map on Icon Click</title>
+    <!-- Add Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylel.css" />
+
+   
+</head>
+<body>
+
+    <div class="container">
+        <!-- Location Pin Icon (Font Awesome) -->
+        <span class="map-icon" onclick="toggleMap()">
+            <i class="fas fa-map-pin"></i> 
+        </span>
+
+        <!-- Hidden map container that will be shown on click -->
+        <div class="map-container" id="mapContainer">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102452.60644689908!2d78.40710419072126!3d17.391727668629215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1744707527305!5m2!1sen!2sin"
+                width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        // Function to toggle the visibility of the map
+        function toggleMap() {
+            var mapContainer = document.getElementById('mapContainer');
+            // Toggle the display between block (visible) and none (hidden)
+            if (mapContainer.style.display === 'none' || mapContainer.style.display === '') {
+                mapContainer.style.display = 'block';
+            } else {
+                mapContainer.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
